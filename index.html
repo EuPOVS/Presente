@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Laura</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .intro-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: url('https://i.pinimg.com/736x/be/7d/1c/be7d1cf37de98d9555da1155854135f4.jpg') no-repeat center center;
+            background-size: cover;
+            color: var(--primary);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+        }
+        .intro-container h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .intro-container p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        .intro-container button {
+            padding: 10px 20px;
+            font-size: 1em;
+            background: var(--heart-color);
+            color: var(--primary);
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            box-shadow: 0 0 10px var(--shadow-color);
+            transition: background 0.3s;
+        }
+        .intro-container button:hover {
+            background: darkred;
+        }
+    </style>
+</head>
+<body>
+    <div class="intro-container">
+        <h1>Para minha Laura 💌</h1>
+        <p>Este é um presente especial, feito com amor e carinho, só para você. Clique no botão abaixo para abrir uma surpresa que vem direto do meu coração.</p>
+        <button onclick="startSurprise()">Abrir Surpresa</button>
+    </div>
+    <script>
+        function startSurprise() {
+            window.location.href = "./Laura.html";
+        }
+    </script>
+</body>
+</html>
